@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+i. Nombre.<br>
+1. Deberá tener una longitud mínima de 2 caracteres y
+máxima de 60.<br>
+2. Cada nombre, en caso de ser más de uno, debe estar
+separado por un espacio y sólo se aceptarán letras del
+alfabeto español.<br>
+3. El nombre no puede empezar por un espacio.<br><br>
+
+ii. Apellidos.<br>
+1. Deberán tener una longitud mínima de dos y máxima de 60
+caracteres.<br>
+2. Cada apellido, en caso de ser más de uno, deberá estar
+separado por un espacio.<br>
+3. Sólo serán válidas las letras del alfabeto español.<br>
+4. Los apellidos no pueden empezar por un espacio.<br><br>
+
+iii. Nombre de usuario.<br>
+1. No puede haber más de un usuario con el mismo nombre
+de usuario.<br>
+2. Solo se aceptan las letras del alfabeto inglés, números,
+puntos, espacios y guiones.
+3. El nombre de usuario no puede tener una longitud mínima
+de 2 caracteres y más de 30.<br><br>
+
+iv. Correo electrónico.<br>
+1. Debe ser un correo electrónico valido, es decir, con la
+estructura siguiente: nombre de usuario, seguido de un @
+seguido del dominio al que pertenece el correo electrónico.
+P.e. usuario@dominio.com.<br>
+2. No puede haber más de un usuario con el mismo correo
+electrónico.<br><br>
+
+v. Contraseña.<br>
+1. Sólo se aceptan las letras del alfabeto inglés, números y
+los siguientes caracteres:-/=/&%#$”!.<br>
+2. La contraseña debe tener una longitud mínima de 6 y
+máxima de 30 caracteres.<br><br>
+
+vi. Fecha de nacimiento.<br>
+1. La fecha de nacimiento no puede ser menor a la
+correspondiente a 16 años.
+<p>
+	Hacer esto: https://youtu.be/UOptam261Ts
+</p>
+<form action="hola.html" onsubmit="return validacion()">
+	Nombre<input type="text" name="nombre">
+	Apellidos<input type="text" name="apellidos">
+	Nombre de Usuario<input type="text" name="user">
+	Correo electrónico<input type="email" name="email">
+	Contraseña<input type="password" name="password">
+	Fecha de nacimiento<input type="date" name="date">
+	<input type="submit" name="enviar" value="enviar">
+</form>
+<script type="text/javascript" src="validar.js"></script>
+</body>
+</html>

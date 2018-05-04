@@ -73,6 +73,11 @@ function validacion(e){
 		return false
 	}
 
+	if(!valDate(fecha)){
+		alert("Debes tener 16 años o más para poder registrarte");
+		return false;
+	}
+
 
 
 }
@@ -178,6 +183,7 @@ function caracteresPass(password){
 	}
 }
 
+//funcion para validar los caracteres de la contraseña
 function valPass(password){
 	let caracter
 	let pat_pass=/[^(?:a-zA-Z\d\-\=\/\&\%\#\$\”\!)]/
@@ -190,4 +196,51 @@ function valPass(password){
 	else{
 		return true;
 	}
+}
+
+//funcion para validar que el usuario tenga 16 años o mas
+function valDate(fecha){
+	let date= new Date()
+	let date2=date.toString()
+	let date3=date2.split(" ")
+	let fecha2=fecha.split("-")
+	let meses={
+		Jan:1,
+		Feb:2,
+		Mar:3,
+		Apr:4,
+		May:5,
+		Jun:6,
+		Jul:7,
+		Aug:8,
+		Sep:9,
+		Oct:10,
+		Nov:11,
+		Dec:12
+	}
+	let mes=meses[date3[1]]
+	if(date3[3]-fecha2[0]<16){
+		return false
+	}
+	else if(date3[3]-fecha2[0]==16){
+		if(mes-fecha2[1]>0){
+			return false
+		}
+		else if(mes-fecha2[1]==0){
+			if(date3[2]-fecha2[2]>0){
+				return false
+			}
+			else{
+				return true
+			}
+		}
+		else{
+			return true
+		}
+
+	}
+	else{
+		return true
+	}
+
 }

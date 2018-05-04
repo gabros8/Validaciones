@@ -48,14 +48,14 @@ correspondiente a 16 años.
 <p>
 	Hacer esto: https://youtu.be/UOptam261Ts
 </p>
-<form action="hola.html" onsubmit="return validacion()">
-	Nombre<input type="text" name="nombre">
-	Apellidos<input type="text" name="apellidos">
-	Nombre de Usuario<input type="text" name="user">
-	Correo electrónico<input type="email" name="email">
-	Contraseña<input type="password" name="password">
-	Fecha de nacimiento<input type="date" name="date">
-	<input type="submit" name="enviar" value="enviar">
+<form action="hola.html" onsubmit="return validacion(event)" id="form">
+	Nombre<input type="text" name="nombre" id="nombre">
+	Apellidos<input type="text" name="apellidos" id="apellidos">
+	Nombre de Usuario<input type="text" name="user"id="user">
+	Correo electrónico<input type="email" name="email" id="email">
+	Contraseña<input type="password" name="password" id="password">
+	Fecha de nacimiento<input type="date" name="date" id="date">
+	<input type="submit" name="enviar" value="enviar" id="submit">
 </form>
 <script type="text/javascript" src="validar.js"></script>
 </body>
